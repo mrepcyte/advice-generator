@@ -80,15 +80,9 @@ export const DiceButton = styled(Dice)`
     padding: 18px;
     border-radius: 50%;
     background-color: hsl(150, 100%, 66%);
-    position: absolute;
-    right: 45%;
-    bottom: -10%;
+    margin-bottom: -3.375rem;
 
     &:hover {
         animation: glow 3s infinite alternate;
-    }
-
-    @media (max-width: 600px) {
-        right: 42%;
     }
 `;

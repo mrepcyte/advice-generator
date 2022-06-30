@@ -18,7 +18,7 @@ export const Page = styled.div`
 
 export const Card = styled.section`
     ${center};
-    width: 36vw;
+    width: 32vw;
     text-align: center;
     background-color: hsl(217, 19%, 24%);
     padding: 1.4rem;

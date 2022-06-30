@@ -24,25 +24,37 @@ export const Card = styled.section`
     padding: 1.4rem;
     border-radius: 12px;
     position: relative;
+
+    @media (max-width: 890px) {
+        width: 80vw;
+    }
 `;
 
 export const NumberP = styled.p`
     color: hsl(150, 100%, 66%);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-size: 14px;
+    font-size: 0.875rem;
+
+    @media (max-width: 890px) {
+        font-size: 0.725rem;
+    }
 `;
 
 export const AdviceP = styled.p`
     color: hsl(193, 38%, 86%);
     font-size: 1.75rem;
     margin: 0.875rem;
+
+    @media (max-width: 890px) {
+        font-size: 1.4rem;
+    }
 `;
 
 export const DividerDesktop = styled(DividerD)`
-    margin: 1.2rem 0 2.5rem 0;
+    margin: 1.2rem 1.2rem 2.5rem 1.2rem;
 
-    @media (max-width: 780px) {
+    @media (max-width: 1135px) {
         display: none;
     }
 `;
@@ -50,7 +62,7 @@ export const DividerDesktop = styled(DividerD)`
 export const DividerMobile = styled(DividerM)`
     display: none;
 
-    @media (max-width: 780px) {
+    @media (max-width: 1135px) {
         display: block;
         margin: 1.2rem 0 2.5rem 0;
     }
@@ -65,7 +77,7 @@ export const DiceButton = styled(Dice)`
             box-shadow: rgb(82, 255, 168) 0 10px 80px;
         }
     }
-    padding: 16px;
+    padding: 18px;
     border-radius: 50%;
     background-color: hsl(150, 100%, 66%);
     position: absolute;
@@ -74,5 +86,9 @@ export const DiceButton = styled(Dice)`
 
     &:hover {
         animation: glow 3s infinite alternate;
+    }
+
+    @media (max-width: 600px) {
+        right: 42%;
     }
 `;

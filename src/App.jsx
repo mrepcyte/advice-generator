@@ -4,12 +4,11 @@ import AdviceSlip from './components/advice-slip';
 
 const App = () => {
     return (
-      <>
-      <GlobalStyle />
-      <AdviceSlip />
-      </>
-    )
-   
+        <>
+            <GlobalStyle />
+            <AdviceSlip />
+        </>
+    );
 };
 
 export default App;
